@@ -8,10 +8,9 @@
  */
 int main(void)
 {
-	char mess1[] = "and that piece of art is useful\"";
-	char mess2[] = " - Dora Korpar, 2015-10-19\n";
 
-	strcat(mess1,mess2);
-	fwrite(mess1, strlen(mess1), 1, stderr);
+	fwrite("and that piece of art is useful\""
+		       " - Dora Korpar, 2015-10-19\n",
+			59, 1, stderr);
 	return (1);
 }
