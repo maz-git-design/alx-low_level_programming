@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 /**
- * My entry point
+ * main - Entry point
  *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	char c = 'a';
-	
-	while(c <= 'z')
+
+	while (c <= 'z')
 		putchar(c++);
 	putchar('\n');
 	return (0);

@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 /**
- * My entry point
+ * main - Entry point
  *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int n = 0;
-	
-	while(n < 10)
-		printf("%d",n++);
+
+	while (n < 10)
+		printf("%d", n++);
 	printf("\n");
 	return (0);
 }
