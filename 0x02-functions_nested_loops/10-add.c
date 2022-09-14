@@ -5,7 +5,7 @@
  *
  * @a: the first argument
  * @b: the second argument
- * Reurn: the result of the add operation
+ * Return: the result of the add operation
  */
 int add(int a, int b)
 {
