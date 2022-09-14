@@ -18,22 +18,29 @@ void times_table(void)
 		{
 			product = i * j;
 			if (product < 10)
+			{
+				if(j != 0 )
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 				_putchar(product + '0');
+			}
 			else
 			{
+				if(j != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 				firstd = product / 10;
 				secondd = product % 10;
 				_putchar(firstd + '0');
 				_putchar(secondd + '0');
 			}
-			if (j < 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-				if (product < 10)
-					_putchar(' ');
-			}
+		
 		}
 		_putchar('\n');
-}
+	}
 }
