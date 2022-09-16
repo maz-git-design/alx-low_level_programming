@@ -13,13 +13,15 @@ int main(void)
 		r = i % 3;
 		q = i % 5;
 		if (r == 0 && i >= 3 && q != 0)
-			printf("Fizz ");
+			printf("Fizz");
 		else if (q == 0 && i >= 5 && r != 0)
-			printf("Buzz ");
+			printf("Buzz");
 		else if (r == 0 && q == 0 && i > 5)
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		else
-			printf("%d ", i);
+			printf("%d", i);
+		if (i != 100)
+			printf(" ");
 
 	}
 	printf("\n");
