@@ -20,7 +20,7 @@ int _atoi(char *s)
 		{
 			j = i;
 			do {
-				number = number * 10 + (*(s + j) - 48);
+				number = number * 10 + isnegatif * (*(s + j) - 48);
 				j++;
 			} while (*(s + j) >= 48 && *(s + j) <= 57);
 			break;
@@ -30,5 +30,5 @@ int _atoi(char *s)
 		i++;
 	} while (c != '\0');
 
-	return  (number * isnegatif);
+	return  (number);
 }
