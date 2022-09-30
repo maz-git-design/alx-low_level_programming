@@ -11,7 +11,7 @@ int main(int __attribute__((unused)) argc,
 		__attribute__((unused)) char *argv[])
 {
 	int i, sum;
-	
+
 	sum = 0;
 	if (argc > 1)
 	{
@@ -25,9 +25,8 @@ int main(int __attribute__((unused)) argc,
 			else
 				sum += atoi(argv[i]);
 		}
-		
+
 	}
-	
 	printf("%d\n", sum);
 	return (0);
 
