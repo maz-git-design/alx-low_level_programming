@@ -1,2 +1,2 @@
 #!/bin/sh
-gcc -c -std=gnu89 *.c && ar rc liball.a *.o
+gcc -c -std=gnu89 *.c && ar rc liball.a *.o && ranlib liball.a
