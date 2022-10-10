@@ -5,7 +5,7 @@
  * print_dog - print dog
  * @d: dog to print
  */
-void print_dog(struct dog *d) 
+void print_dog(struct dog *d)
 {
 	char *name = "(Nil)";
 	char *owner = "(Nil)";
@@ -13,15 +13,18 @@ void print_dog(struct dog *d)
 
 	if (d != NULL)
 	{
-		if(d->name != NULL)
+		if (d->name != NULL)
 			name = d->name;
-		if(d->owner != NULL)
+		if (d->owner != NULL)
 			owner = d->owner;
-		age = d->age;
+		if (d->age != 0.0)
+			age = d->age;
 
 		printf("Name: %s\n", name);
-		printf("Age: %.6f\n", age);
+		if (age != 0.0)
+			printf("Age: %.6f\n", age);
+		else
+			printf("Age: (Nil)\n");
 		printf("Owner: %s\n", owner);
-			
 	}
 }
