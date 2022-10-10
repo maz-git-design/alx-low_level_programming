@@ -1,3 +1,5 @@
+#ifndef DOG_H
+#define DOG_H
 
 /**
  * struct dog - data type describing a dog
@@ -12,3 +14,5 @@ struct dog
 	char *owner;
 };
 void init_dog(struct dog *, char *, float, char *);
+
+#endif
